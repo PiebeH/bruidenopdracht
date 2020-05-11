@@ -58,8 +58,9 @@ body {
     width: 32%;
     background: none;
     margin: 10% auto;
-    text-align:center;
-    font-size: large;
+    text-align: center;
+    position: static;
+    font-size: small;
 }
 .wrapper_welcome span{
     color: #2f3947;
@@ -68,10 +69,23 @@ body {
 
 .text1{
     font-size: large;
-    text-decoration-color: white;
-    font-size: 60px;
-
+    font-size: 80px;
 }
+
+.button1{
+    background-color: #2f3947;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
 
 
 
