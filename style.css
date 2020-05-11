@@ -1,13 +1,9 @@
-* {
-    box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans"
-    , "droid sans", "helvetica neue", Arial, sans-serif;
-    font-size: 16px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
+
 body {
-    background-color: #435165;
+    height: 100vh;
+    background-image: url("https://img4.goodfon.com/wallpaper/nbig/5/a9/prazdnik-svadba-obruchalnye-koltsa-roza-lepestki-rozy.jpg");
+    background-size: cover ;
+
 }
 .navtop {
     background-color: #2f3947;
@@ -56,3 +52,27 @@ body {
 }
 .navtop div a:hover {
     color: #eaebed;
+}
+
+.wrapper_welcome{
+    width: 32%;
+    background: none;
+    margin: 10% auto;
+    text-align:center;
+    font-size: large;
+}
+.wrapper_welcome span{
+    color: #2f3947;
+    text-transform: uppercase;
+}
+
+.text1{
+    font-size: large;
+    text-decoration-color: white;
+    font-size: 60px;
+
+}
+
+
+
+
