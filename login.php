@@ -9,4 +9,16 @@
 <body>
 <nav class="navtop">
 </nav>
+<div class="wrapper">
+    <h1>Login</h1>
+    <hr>
+    <form action="" method="post">
+        <label for="username"><b>Name</b></label>
+        <input type="text" placeholder="Name" name="username">
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+    </form>
+    <input type="submit" name="send" value="Log in">
+</div>
+
 </body>

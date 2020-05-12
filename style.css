@@ -1,16 +1,25 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 body {
     height: 100vh;
     background-image: url("https://img4.goodfon.com/wallpaper/nbig/5/a9/prazdnik-svadba-obruchalnye-koltsa-roza-lepestki-rozy.jpg");
-    background-size: cover ;
+    background-size: cover;
 
 }
+
 .navtop {
     background-color: #2f3947;
     height: 60px;
     width: 100%;
     border: 0;
 }
+
 .navtop div {
     display: flex;
     margin: 0 auto;
@@ -19,10 +28,12 @@ body {
 
     height: 100%;
 }
+
 .navtop div h1, .navtop div a {
     display: inline-flex;
     align-items: center;
 }
+
 .navtop div h1 {
     flex: 1;
     font-size: 24px;
@@ -31,6 +42,7 @@ body {
     color: #eaebed;
     font-weight: normal;
 }
+
 .navtop div h1 a {
     display: inline-flex;
     align-items: center;
@@ -41,38 +53,59 @@ body {
     color: #eaebed;
     font-weight: normal;
 }
+
 .navtop div a {
     padding: 0 20px;
     text-decoration: none;
     color: #c1c4c8;
     font-weight: bold;
 }
+
 .navtop div a i {
     padding: 2px 8px 0 0;
 }
+
 .navtop div a:hover {
     color: #eaebed;
 }
 
-.wrapper_welcome{
+.wrapper_welcome {
     width: 32%;
     background: none;
-    margin: 10% auto;
+    margin: 5% auto;
     text-align: center;
-    position: static;
     font-size: small;
 }
-.wrapper_welcome span{
+
+.wrapper_welcome span {
     color: #2f3947;
     text-transform: uppercase;
 }
 
-.text1{
+.text1 {
     font-size: large;
     font-size: 80px;
 }
 
-.button1{
+.wrapper {
+    background: none;
+    width: 32%;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.8);
+    margin: 5% auto;
+    text-align: center;
+    border-width: medium;
+    border: #2f3947;
+}
+
+.wrapper1 {
+    background-color: white;
+    width: 32%;
+    margin: 5% auto;
+    text-align: center;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+}
+
+.button1 {
     background-color: #2f3947;
     border: none;
     color: white;
@@ -85,6 +118,46 @@ body {
     cursor: pointer;
     border-radius: 12px;
 }
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* Achtergrond focus */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+input[type=submit] {
+    background-color: #2f3947;
+    color: white;
+    padding: 14px 20px
+}
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+.signupbtn {
+    padding: 14px 20px;
+    background-color: #2f3947;
+}
+
+.cancelbtn, .signupbtn {
+    float: left;
+    width: 50%;
+}
+
+
+
 
 
 
