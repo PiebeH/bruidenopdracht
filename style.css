@@ -144,11 +144,13 @@ input[type=submit] {
 .cancelbtn {
     padding: 14px 20px;
     background-color: #f44336;
+    color: white;
 }
 
 .signupbtn {
     padding: 14px 20px;
     background-color: #2f3947;
+    color: white;
 }
 
 .cancelbtn, .signupbtn {
