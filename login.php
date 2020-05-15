@@ -12,13 +12,11 @@
 <div class="wrapper">
     <h1>Login</h1>
     <hr>
-    <form action="" method="post">
-        <label for="username"><b>Name</b></label>
-        <input type="text" placeholder="Name" name="username">
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+    <form action="includes/login.inc.php" method="post">
+        <input type="text" name="email" placeholder="Email/Username">
+        <input type="password" name="psw" placeholder="Password">
+        <button type="submit" name="login-submit">Login</button>
     </form>
-    <input type="submit" name="send" value="Log in">
 </div>
 
 </body>
