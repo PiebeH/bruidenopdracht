@@ -23,10 +23,11 @@ include_once 'includes/config.php';
         <input type="email" name="email" placeholder="Email">
         <input type="password" name="psw" placeholder="Password">
         <input type="password" name="psw_repeat" placeholder="Repeat password">
-    </form>
+
     <button type="button" class="cancelbtn">Cancel</button>
     <button type="submit" name="signup-submit" class="signupbtn">Sign Up</button>
     <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+    </form>
 </div>
 </body>
 </html>
