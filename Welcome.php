@@ -11,7 +11,7 @@
     <span class="text1">Welcome</span>
     <h1> Are you getting married soon?</h1>
     <a href="signup.php">
-        <button class="button1">SIGN UP HERE!</button>
+        <button class="button1" name="signup">SIGN UP HERE!</button>
     </a>
     <h1>Do you have an account already?</h1>
     <a href="login.php">

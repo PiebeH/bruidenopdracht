@@ -23,15 +23,17 @@ if (isset($_POST['signup-submit'])) {
         header("location: ../signup.php?error=passwordcheck&name . $name . &email= . $email");
         exit();
     } else {
+        $hashedpsw = password_hash($password, PASSWORD_DEFAULT);
         $sql = "INSERT INTO gebruikers (name,username,email,password) VALUES(?, ?, ?, ?)";
         $query =$conn->prepare($sql);
-        $query->execute(array($name, $username, $email, $password));
+        $query->execute(array($name, $username, $email, $hashedpsw));
         header("location: ../signup.php?signup=succes");
         exit();
 
     }
 
 }
+
 
 
 
