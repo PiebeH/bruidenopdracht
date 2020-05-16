@@ -19,44 +19,19 @@ if (isset($_POST['signup-submit'])) {
     } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         header("location: ../signup.php?error=invalidmail&name" . $name);
         exit();
-    } //search pattern
-    else if (preg_match("/^[a-zA-Z0-9]*$/", $username)) {
-        header("location: ../signup.php?error=invalidusername&email" . $email);
-        exit();
     } else if ($password !== $passwordRepeat) {
         header("location: ../signup.php?error=passwordcheck&name . $name . &email= . $email");
         exit();
-    }
-    else{
-        $data = [
-            'name' => $name,
-            'username' => $username,
-            'email' => $email,
-            'password'=> $password,
-        ];
-        $sql = "INSERT INTO gebruikers (name, username, email, password) VALUES(?, ?, ?, ?)";
+    } else {
+        $sql = "INSERT INTO gebruikers (name,username,email,password) VALUES(?, ?, ?, ?)";
+        $query =$conn->prepare($sql);
+        $query->execute(array($name, $username, $email, $password));
+        header("location: ../signup.php?signup=succes");
+        exit();
 
-
-//Prepare our statement using the SQL query.
-        $statement = $conn->prepare($sql);
-//Bind our values to our parameters (we called them :make and :model).
-        $statement->bindValue('name', '?');
-        $statement->bindValue('username', '?');
-        $statement->bindValue('email', '?');
-        $statement->bindValue('password', '?');
-//Execute the statement and insert our values.
-        $inserted = $statement->execute();
-//Because PDOStatement::execute returns a TRUE or FALSE value,
-//we can easily check to see if our insert was successful.
-        if(!$inserted){
-           header("Location../signup.php?error=sqlerror");
-           exit();
-        }
-        
-        $statement->execute();
     }
+
 }
-
 
 
 

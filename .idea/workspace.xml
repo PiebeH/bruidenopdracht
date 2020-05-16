@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92b21cb7-b737-4cae-86c7-16dac216ca96" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/gebruikers.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/config.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/signup.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/signup.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
     </list>
@@ -71,6 +71,9 @@
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\moege\Desktop\bruidenopdracht" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\moege\Desktop\bruidenopdracht" />
     </key>
@@ -113,7 +116,7 @@
       <workItem from="1589374223645" duration="2371000" />
       <workItem from="1589455886900" duration="7555000" />
       <workItem from="1589542456507" duration="8734000" />
-      <workItem from="1589629131270" duration="8617000" />
+      <workItem from="1589629131270" duration="11065000" />
     </task>
     <servers />
   </component>
