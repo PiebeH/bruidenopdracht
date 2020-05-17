@@ -1,6 +1,6 @@
 <?php
 //Kijkt of de gebruiker op de signup-button heeft geklikt
-if (isset($_POST['signup'])) {
+if (isset($_POST['signup-submit'])) {
 
     require 'config.php';
 //haalt ingevoerde data
@@ -29,6 +29,7 @@ if (isset($_POST['signup'])) {
         $query->execute(array($name, $username, $email, $hashedpsw));
         header("location: ../signup.php?signup=succes");
         exit();
+
 
     }
 

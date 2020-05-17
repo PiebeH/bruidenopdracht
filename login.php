@@ -1,3 +1,8 @@
+<?php
+session_start();
+include_once 'includes/config.php';
+include_once 'includes/signup.inc.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +18,7 @@
     <h1>Login</h1>
     <hr>
     <form action="includes/login.inc.php" method="post">
-        <input type="text" name="email" placeholder="Email/Username">
+        <input type="text" name="username" placeholder="Username">
         <input type="password" name="psw" placeholder="Password">
         <button type="submit" name="login-submit">Login</button>
     </form>

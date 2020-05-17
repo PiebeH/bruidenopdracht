@@ -1,6 +1,8 @@
 <?php
+session_start();
 include_once 'includes/config.php';
 include_once 'includes/signup.inc.php';
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
