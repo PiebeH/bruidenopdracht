@@ -118,6 +118,14 @@ body {
     cursor: pointer;
     border-radius: 12px;
 }
+.button2{
+    background-color: #2f3947;
+    border: white;
+    color: white;
+    alignment: right;
+
+
+}
 
 /* Full-width input fields */
 input[type=text], input[type=password], input[type=email] {

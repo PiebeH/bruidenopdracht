@@ -12,9 +12,6 @@ include_once 'includes/signup.inc.php';
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 </head>
-<body>
-<nav class="navtop">
-</nav>
 <div class="wrapper">
     <h1>Sign Up</h1>
     <p>Please fill in this form to create an account.</p>

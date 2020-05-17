@@ -5,6 +5,7 @@ $password = "";
 $db = "bruidenopdrachtdb";
 $connectionString = "msql: server=$server;db=$db ";
 
+$conn = new PDO("mysql:host=$server;dbname=$db", "$username", "$password");
 //Checkt of de connectie succesvol was
 try {
     $conn = new PDO("mysql:host=$server;dbname=$db", "$username", "$password");

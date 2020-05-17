@@ -1,5 +1,6 @@
 <?php
 //Kijkt of de gebruiker op de signup-button heeft geklikt
+session_start();
 if (isset($_POST['signup-submit'])) {
 
     require 'config.php';
@@ -27,7 +28,7 @@ if (isset($_POST['signup-submit'])) {
         $sql = "INSERT INTO gebruikers (name,username,email,password) VALUES(?, ?, ?, ?)";
         $query = $conn->prepare($sql);
         $query->execute(array($name, $username, $email, $hashedpsw));
-        header("location: ../signup.php?signup=succes");
+        header("location: ../homepage.php?signup=succes");
         exit();
 
 

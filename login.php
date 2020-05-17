@@ -1,7 +1,6 @@
 <?php
 session_start();
 include_once 'includes/config.php';
-include_once 'includes/signup.inc.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,8 +11,6 @@ include_once 'includes/signup.inc.php';
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 </head>
 <body>
-<nav class="navtop">
-</nav>
 <div class="wrapper">
     <h1>Login</h1>
     <hr>
