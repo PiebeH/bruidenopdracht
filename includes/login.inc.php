@@ -9,20 +9,18 @@ if (isset($_POST['login-submit'])) {
         header("Location:../login.php?error=emptyfields");
         exit();
     } else {
-        $sql = "SELECT * FROM gebruikers WHERE username = :username  AND password = :psw;";
-        $stmt = $conn->prepare($sql);
+        $sql = "SELECT * FROM gebruikers WHERE username = ?;";
         if (empty($username)){
             header("location: ../welcome.php?error=sqlerror");
             exit();
         }
         else {
-            $query = "SELECT * FROM gebruikers WHERE username = ?  AND password = ?;";
-            $stmt = $conn->prepare($query);
-            $stmt->bindParam(':username',$username , PDO::PARAM_STR);
-            $stmt->bindParam(':psw', $password, PDO::PARAM_STR);
-            $row = $stmt->fetch(PDO::FETCH_ASSOC);
+            $sql = "SELECT * FROM gebruikers WHERE username='$username';";
+            $stmt = $conn->prepare($sql);
+            $stmt->bindParam('username',$username);
             $stmt->execute();
-            if ($stmt->rowCount() > 0) {
+            $row = $stmt->fetch(PDO::FETCH_ASSOC);
+            if ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
                 $pswCheck = password_verify($password, $row['password']);
                 if ($pswCheck == false) {
                     header("Location:../welcome.php?error=wrongpassword");
