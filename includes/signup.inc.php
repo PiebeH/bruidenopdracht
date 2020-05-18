@@ -1,6 +1,6 @@
 <?php
 //Kijkt of de gebruiker op de signup-button heeft geklikt
-session_start();
+
 if (isset($_POST['signup-submit'])) {
 
     require 'config.php';
@@ -8,7 +8,7 @@ if (isset($_POST['signup-submit'])) {
     $name = $_POST['name'];
     $username = $_POST['username'];
     $email = $_POST['email'];
-    $password = $_POST['psw'];
+    $password = $_POST['password'];
     $passwordRepeat = $_POST['psw_repeat'];
 //checkt of er een leeg veld is
     if (empty($name) || empty($username) || empty($email) || empty($password) || empty($passwordRepeat)) {
@@ -30,10 +30,7 @@ if (isset($_POST['signup-submit'])) {
         $query->execute(array($name, $username, $email, $hashedpsw));
         header("location: ../homepage.php?signup=succes");
         exit();
-
-
     }
-
 }
 
 

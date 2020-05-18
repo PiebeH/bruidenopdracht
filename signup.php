@@ -20,7 +20,7 @@ include_once 'includes/signup.inc.php';
         <input type="text" name="name" placeholder="Name">
         <input type="text" name="username" placeholder="Username">
         <input type="email" name="email" placeholder="Email">
-        <input type="password" name="psw" placeholder="Password">
+        <input type="password" name="password" placeholder="Password">
         <input type="password" name="psw_repeat" placeholder="Repeat password">
 
     <button type="button" class="cancelbtn">Cancel</button>

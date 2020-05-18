@@ -16,7 +16,7 @@ include_once 'includes/config.php';
     <hr>
     <form action="includes/login.inc.php" method="post">
         <input type="text" name="username" placeholder="Username">
-        <input type="password" name="psw" placeholder="Password">
+        <input type="password" name="password" placeholder="Password">
         <button type="submit" name="login-submit">Login</button>
     </form>
 </div>

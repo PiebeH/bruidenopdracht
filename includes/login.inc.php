@@ -4,42 +4,36 @@ if (isset($_POST['login-submit'])) {
 
     require 'config.php';
     $username = $_POST['username'];
-    $password = $_POST['psw'];
+    $password = $_POST['password'];
     if (empty($username) || empty($password)) {
         header("Location:../login.php?error=emptyfields");
         exit();
-    } else {
-        $sql = "SELECT * FROM gebruikers WHERE username = ?;";
-        if (empty($username)){
-            header("location: ../welcome.php?error=sqlerror");
-            exit();
-        }
+    }
         else {
-            $sql = "SELECT * FROM gebruikers WHERE username='$username';";
-            $stmt = $conn->prepare($sql);
-            $stmt->bindParam('username',$username);
+            $stmt = $conn->prepare("SELECT username FROM gebruikers WHERE username= :username;");
+            $stmt->bindParam(':username', $username, PDO::PARAM_STR);
+           // $stmt->bindParam(':password', $password, PDO::PARAM_STR);
             $stmt->execute();
-            $row = $stmt->fetch(PDO::FETCH_ASSOC);
-            if ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                $pswCheck = password_verify($password, $row['password']);
-                if ($pswCheck == false) {
+            $row= $stmt->fetch(PDO::FETCH_ASSOC);
+            $pswCheck = password_verify($password, $row[':password']);
+                if ($pswCheck == true) {
                     header("Location:../welcome.php?error=wrongpassword");
                     exit();
                 } else if ($pswCheck == true) {
                     session_start();
+                    $_SESSION['user_id'] = $row['user_id'];
                     $_SESSION['username'] = $row['username'];
-                    $_SESSION['psw'] = $row['password'];
                     header("Location:../homepage.php?login=succes");
                     exit();
                 }
 
 
+            else{
+                header("Location:../welcome.php?loginerror");
+                exit();
             }
-            else {
-                header("Location:../welcome.php?error=nouser");
-                exit();}
         }
-    }
+
 
 }
 else {
