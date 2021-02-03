@@ -430,7 +430,7 @@
   </div>
 
   <div class="Inhoud" style="padding-left:16px">
-    <h1>We're getting married!</h1>
+    <h1>"Were getting married!"</h1>
     <p></p>
   </div>
   <script>
