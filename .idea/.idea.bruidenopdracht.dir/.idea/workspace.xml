@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6bd3836a-e48d-441e-a44c-8cfb6dd2dc0c" name="Default Changelist" comment="#16" />
+    <list default="true" id="6bd3836a-e48d-441e-a44c-8cfb6dd2dc0c" name="Default Changelist" comment="#16">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.bruidenopdracht.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bruidenopdracht.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Welcome.html" beforeDir="false" afterPath="$PROJECT_DIR$/Welcome.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/homepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/signup.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,13 +18,18 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/includes/config.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/includes/logout.inc.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/includes/logout.inc.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/includes/signup.inc.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/includes/login.inc.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Opdracht_2_webdev.php" />
-      <option value="$PROJECT_DIR$/login.html" />
       <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f9a5ddd6-b0c9-416a-a806-7038491362dd/console_1.sql" />
+      <option value="$PROJECT_DIR$/signup.html" />
+      <option value="$PROJECT_DIR$/homepage.html" />
+      <option value="$PROJECT_DIR$/login.html" />
+      <option value="$PROJECT_DIR$/Welcome.html" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nyJKOjSn7C1dk8KUCLvpBMalG0" />
@@ -44,7 +55,7 @@
       <option name="presentableId" value="Default" />
       <updated>1612356334624</updated>
       <workItem from="1612356340257" duration="982000" />
-      <workItem from="1613999652265" duration="9952000" />
+      <workItem from="1613999652265" duration="10632000" />
     </task>
     <task id="LOCAL-00001" summary="#15">
       <created>1612357099380</created>
