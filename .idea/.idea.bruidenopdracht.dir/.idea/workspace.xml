@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6bd3836a-e48d-441e-a44c-8cfb6dd2dc0c" name="Default Changelist" comment="#15">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/moege.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/opdracht 2 webdevolopment.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Opdracht_2_webdev.php" beforeDir="false" afterPath="$PROJECT_DIR$/Opdracht_2_webdev.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Welcome.php" beforeDir="false" afterPath="$PROJECT_DIR$/Welcome.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codefillin.php" beforeDir="false" afterPath="$PROJECT_DIR$/codefillin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wishlist.php" beforeDir="false" afterPath="$PROJECT_DIR$/wishlist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.bruidenopdracht.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.bruidenopdracht.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gebruikers.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +21,7 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/Opdracht_2_webdev.php" />
       <option value="$PROJECT_DIR$/login.html" />
+      <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f9a5ddd6-b0c9-416a-a806-7038491362dd/console_1.sql" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nyJKOjSn7C1dk8KUCLvpBMalG0" />
@@ -44,7 +34,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="ssh.settings" />
+    <property name="settings.editor.selected.configurable" value="database.main" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -56,7 +46,7 @@
       <option name="presentableId" value="Default" />
       <updated>1612356334624</updated>
       <workItem from="1612356340257" duration="982000" />
-      <workItem from="1613999652265" duration="5424000" />
+      <workItem from="1613999652265" duration="8913000" />
     </task>
     <task id="LOCAL-00001" summary="#15">
       <created>1612357099380</created>
@@ -65,7 +55,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612357099380</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="#15">
+      <created>1614082416221</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1614082416221</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
